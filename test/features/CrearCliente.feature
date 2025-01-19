@@ -6,8 +6,7 @@ Feature: crear cliente
         Then debe visualizar la pagina de inicio de siigo
 
     Scenario: Crear cliente correctamente
-        Given Stiven se encuentra en la pagina de inicio de siigo
-        When se dirige al formulario de creacion de cliente
+        When Stiven se dirige al formulario de creacion de cliente
         And ingresa la informacion del cliente
         And guarda el cliente
         Then debe visualizar el mensaje "Cliente creado correctamente"
