@@ -8,13 +8,14 @@ export const config: WebdriverIOConfig = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
-    autoCompileOpts: {
-        autoCompile: true,
-        tsNodeOpts: {
-            project: './tsconfig.json',
-            transpileOnly: true
-        }
-    },
+    // Remove the autoCompileOpts property
+    // autoCompileOpts: {
+    //     autoCompile: true,
+    //     tsNodeOpts: {
+    //         project: './tsconfig.json',
+    //         transpileOnly: true
+    //     }
+    // },
     //
     // ==================
     // Specify Test Files
@@ -33,11 +34,6 @@ export const config: WebdriverIOConfig = {
     specs: [
         './test/**/*.feature'
     ],
-    suites: {
-        translate: [
-            './test/features/GoogleTranslate.feature'
-        ]
-    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -71,7 +67,7 @@ export const config: WebdriverIOConfig = {
                 //'start-maximized',
                 //'no-sandbox',
                 'window-size=1920,1080',
-                'headless=new',
+                //'headless=new',
             ]
         }
         //},{
