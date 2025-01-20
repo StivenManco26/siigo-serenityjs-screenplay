@@ -18,7 +18,7 @@ git clone https://github.com/StivenManco26/siigo-serenityjs-screenplay.git
 
 Una vez clone el código ejecute el siguiente comando en el directorio donde clonó el proyecto:
 ```
-npm install
+npm install --legacy-peer-deps
 ```
 
 ## Ejecución Local
